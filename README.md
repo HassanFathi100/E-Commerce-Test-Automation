@@ -1,6 +1,6 @@
-#E-Commerce website UI Test automation
+# E-Commerce website UI Test automation
 
-####This project is for UI test automation for an online shopping website [Link](https://demo.nopcommerce.com/)
+### This project is for UI test automation for an online shopping website [Link](https://demo.nopcommerce.com/)
 ---
 This project is submitted to Udacity, FWD scholarship, FrontEnd performance testing nanodegree @April-cohort
 
