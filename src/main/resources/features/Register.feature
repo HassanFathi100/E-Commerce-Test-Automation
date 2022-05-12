@@ -1,3 +1,4 @@
+@regression
 Feature: user should be able to register in the website and
 
   #Test Scenario 1
