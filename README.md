@@ -30,6 +30,7 @@ This project is submitted to Udacity, FWD scholarship, FrontEnd performance test
 - Screenshot(s) of Maven repository/website showing the selected & used versions of automation, assertion, and behavioral-driven frameworks
   ![TestNG version](Screenshots/testng%20version.png)
   ![Cucumber version](Screenshots/cucumber%20verision.png)
+  ![JUnit version](Screenshots/cucumber%20juint%20version.png)
 
   ---
 
