@@ -49,7 +49,7 @@ public class Registeration {
         registerPage.birthDay.click();
         registerPage.birthMonth.click();
         registerPage.birthYear.click();
-        registerPage.emailTF.sendKeys("automsaaagbh.anjsddsn@testing.com");
+        registerPage.emailTF.sendKeys("automsaaagbh.anjsddasdsn@testing.com");
         registerPage.companyTf.sendKeys("auatodasmaation company");
         registerPage.passwordTF.sendKeys("P@ssw0rd");
         registerPage.confirmPasswordTF.sendKeys("P@ssw0rd");
