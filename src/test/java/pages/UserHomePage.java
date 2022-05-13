@@ -5,20 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
-
+public class UserHomePage {
     WebDriver driver;
-    public HomePage(WebDriver driver) {
+
+    public UserHomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(className = "ico-register")
+    @FindBy(className = "ico-account")
     public
-    WebElement registerButton;
-
-    @FindBy(className = "ico-login")
-    public
-    WebElement loginButton;
-
+    WebElement myAccountTab;
 }

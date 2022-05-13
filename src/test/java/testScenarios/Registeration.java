@@ -16,7 +16,7 @@ public class Registeration {
 
     WebDriver driver = null;
 
-    @Given("user open browser")
+    @Given("user open browser for registration")
     public void userOpenBrowser(){
         //setting up chrome driver
         String chromeDriverPath = "src/main/resources/chromedriver.exe";
@@ -28,10 +28,16 @@ public class Registeration {
         driver.manage().window().maximize();
     }
 
-    @And("user go to registration page")
+    @And("user navigates to website for registration")
     public void navigateToRegistration(){
         //navigate to the website
         driver.navigate().to("https://demo.nopcommerce.com/");
+    }
+
+    @And("user go to registration page")
+    public void navigateToRegistrationPage(){
+        HomePage homePage = new HomePage(driver);
+        homePage.registerButton.click();
     }
 
     @When("user enters valid data")
@@ -49,8 +55,8 @@ public class Registeration {
         registerPage.birthDay.click();
         registerPage.birthMonth.click();
         registerPage.birthYear.click();
-        registerPage.emailTF.sendKeys("automsaaagbh.anjsddasdsn@testing.com");
-        registerPage.companyTf.sendKeys("auatodasmaation company");
+        registerPage.emailTF.sendKeys("automation4@testing.com");
+        registerPage.companyTf.sendKeys("automation company");
         registerPage.passwordTF.sendKeys("P@ssw0rd");
         registerPage.confirmPasswordTF.sendKeys("P@ssw0rd");
 
@@ -63,8 +69,8 @@ public class Registeration {
         registerPage.registerButton.click();
     }
 
-    @Then("user should see successfull registration message")
-    public void successfullRegistrationMessage(){
+    @Then("user should see successful registration message")
+    public void successfulRegistrationMessage(){
         RegistrationSuccessPage registrationSuccessPage = new RegistrationSuccessPage(driver);
 
         String expectedMessage = "Your registration completed";
@@ -81,8 +87,9 @@ public class Registeration {
         softAssert.assertEquals(color, "rgba(76, 177, 124, 1)");
     }
 
-    @After
-    public void closeBrowser(){
+    @And("close browser for registration")
+    public void closeBrowser() throws InterruptedException {
+        Thread.sleep(2000);
         driver.quit();
     }
 }
