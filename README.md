@@ -4,6 +4,12 @@
 ---
 This project is submitted to Udacity, FWD scholarship, FrontEnd performance testing nanodegree @April-cohort
 
+### Test cases
+| Scenario | Description                                     |
+|----------|-------------------------------------------------|
+| SC_01    | User could register with valid data             |
+| SC_02    | User could log in with valid email and password |
+---
 - Screenshot of the environment variables
   ![Enviroment Variables screenshot 1](Screenshots/enviroment%20variables%201.png)
   ![Enviroment Variables screenshot 2](Screenshots/enviroment%20variables%202.png)
