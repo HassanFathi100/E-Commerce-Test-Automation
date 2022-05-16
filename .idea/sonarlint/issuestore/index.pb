@@ -29,5 +29,3 @@ _
 /src/test/java/testScenarios/ChangePassword.java,4\d\4de1e2f5f72a93c3ccc62ce2e2662d0863b174b4
 U
 %src/test/java/runners/TestRunner.java,6\8\683416d30a7936e18b925a37c73fb207dbb02b81
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
