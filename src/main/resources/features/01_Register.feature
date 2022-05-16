@@ -11,4 +11,4 @@ Feature: user should be able to register in the website and
     And press "Resister" button
 
     Then user should see successful registration message
-    And close browser for registration
+#    And close browser for registration

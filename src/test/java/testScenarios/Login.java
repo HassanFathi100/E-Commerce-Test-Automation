@@ -1,6 +1,7 @@
 package testScenarios;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,6 +16,7 @@ import pages.UserHomePage;
 public class Login {
 
     WebDriver driver = null;
+
 
     @Given("user open browser for login")
     public void userOpenBrowser(){
@@ -81,10 +83,15 @@ public class Login {
         softAssert.assertTrue(userHomePage.myAccountTab.isDisplayed());
     }
 
-    @And("close browser for login")
-    public void closeBrowser() throws InterruptedException {
-        Thread.sleep(2000);
-        driver.quit();
-    }
+//    @And("close browser for login")
+//    public void closeBrowser() throws InterruptedException {
+//        Thread.sleep(2000);
+//        driver.quit();
+//    }
+//    @After
+//    public void closeBrowser() throws InterruptedException {
+//        Thread.sleep(2000);
+//        driver.close();
+//    }
 }
 

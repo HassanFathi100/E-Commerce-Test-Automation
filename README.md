@@ -9,6 +9,8 @@ This project is submitted to Udacity, FWD scholarship, FrontEnd performance test
 |----------|-------------------------------------------------|
 | SC_01    | User could register with valid data             |
 | SC_02    | User could log in with valid email and password |
+| SC_03    | User could reset his/her password successfully  |
+
 ---
 - Screenshot of the environment variables
   ![Enviroment Variables screenshot 1](Screenshots/enviroment%20variables%201.png)

@@ -1,6 +1,7 @@
 package testScenarios;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -55,7 +56,7 @@ public class Registeration {
         registerPage.birthDay.click();
         registerPage.birthMonth.click();
         registerPage.birthYear.click();
-        registerPage.emailTF.sendKeys("automation4@testing.com");
+        registerPage.emailTF.sendKeys("automation@testing.com");
         registerPage.companyTf.sendKeys("automation company");
         registerPage.passwordTF.sendKeys("P@ssw0rd");
         registerPage.confirmPasswordTF.sendKeys("P@ssw0rd");
@@ -87,9 +88,9 @@ public class Registeration {
         softAssert.assertEquals(color, "rgba(76, 177, 124, 1)");
     }
 
-    @And("close browser for registration")
-    public void closeBrowser() throws InterruptedException {
-        Thread.sleep(2000);
-        driver.quit();
-    }
+//    @After
+//    public void closeBrowser() throws InterruptedException {
+//        Thread.sleep(2000);
+//        driver.close();
+//    }
 }

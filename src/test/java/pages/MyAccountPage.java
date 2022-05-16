@@ -5,23 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
-
+public class MyAccountPage {
     WebDriver driver;
-    public HomePage(WebDriver driver) {
+    public MyAccountPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-
-    @FindBy(className = "ico-register")
+    @FindBy(css = "a[href=\"/customer/changepassword\"]")
     public
-    WebElement registerButton;
-
-    @FindBy(className = "ico-login")
-    public
-    WebElement loginButton;
-
-    @FindBy(className = "ico-account")
-    public
-    WebElement myAccountButton;
+    WebElement changePasswordAnchor;
 }
