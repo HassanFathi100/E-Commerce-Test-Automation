@@ -13,12 +13,9 @@ public class CategoryPage {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/computers\"]")
-    public WebElement computersButton;
-
-    @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/desktops\"]")
-    public WebElement desktopsItemButton;
-
     @FindBy(css = "div[class=\"page-title\"]")
     public WebElement categoryTitle;
+
+    @FindBy(id = "attribute-option-14")
+    public WebElement grayColorButton;
 }

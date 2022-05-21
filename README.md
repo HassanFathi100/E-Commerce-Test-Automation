@@ -14,6 +14,7 @@ This project is submitted to Udacity, FWD scholarship, FrontEnd performance test
 | SC_04    | Logged User could search for any product            |
 | SC_05    | Logged User could switch between currencies US-Euro |
 | SC_06    | Logged user could select different Categories       |
+| SC_07    | Logged user could filter with color                 |
 
 ---
 - Screenshot of the environment variables

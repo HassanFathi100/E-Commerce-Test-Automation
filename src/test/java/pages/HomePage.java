@@ -33,4 +33,18 @@ public class HomePage {
 
     @FindBy(css = "button[class=\"button-1 search-box-button\"]")
     public WebElement searchButton;
+
+    @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/computers\"]")
+    public WebElement computersButton;
+
+    @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/desktops\"]")
+    public WebElement desktopsItemButton;
+
+    @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/apparel\"]")
+    public WebElement apparelButton;
+
+    @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/shoes\"]")
+    public WebElement shoesItemsButton;
+
+
 }
