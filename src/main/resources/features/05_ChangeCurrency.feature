@@ -1,6 +1,6 @@
 @smoke
 
-  Feature: F05_ChangeCurrency | user can change currency
+  Feature: F05_ChangeCurrency | logged User could switch between currencies US-Euro
 
     Scenario: user can change currency successfully
       Given user open browser for changing currency

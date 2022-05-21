@@ -66,7 +66,7 @@ public class Search {
         try{
         driver.quit();
         } catch(NullPointerException e){
-            System.out.println("NullPointerException thrown!");
+            e.printStackTrace();
         }
     }
 }

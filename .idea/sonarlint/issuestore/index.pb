@@ -7,8 +7,6 @@ M
 Regression.xml,e\9\e96e681162cc814fdd5f581953f0ee6810029718
 R
 "src/test/java/pages/LoginPage.java,2\f\2febc867dad266b12f3cf09596e572e0dcf37dbf
-[
-+src/test/java/pages/ChangePasswordPage.java,c\b\cba6b04935521dca95a29d8d2bf5f6e07a0cc326
 V
 &src/test/java/testScenarios/Login.java,5\a\5a4f7714003eb72a01ee9a0a4492fa6e7d49b6bb
 _

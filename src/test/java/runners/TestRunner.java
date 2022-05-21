@@ -13,6 +13,7 @@ import org.junit.runner.RunWith;
                     "src\\main\\resources\\features\\03_ChangePassword.feature",
                     "src\\main\\resources\\features\\04_Search.feature",
                     "src\\main\\resources\\features\\05_ChangeCurrency.feature",
+                    "src\\main\\resources\\features\\06_HoverCategories.feature",
                     },
         glue = "stepDefinitions",
         tags = "@smoke"

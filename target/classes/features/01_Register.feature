@@ -1,5 +1,5 @@
 @smoke
-Feature: F01_Register | user should be able to register in the website and
+Feature: F01_Register | user could register with valid data
 
   #Test Scenario 1
   Scenario: user enter valid registration data

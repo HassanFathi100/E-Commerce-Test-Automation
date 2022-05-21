@@ -1,6 +1,6 @@
 @smoke
 
-  Feature: F02_Login | user can login successfully
+  Feature: F02_Login | user could log in with valid email and password
 
 
     Scenario: user enter valid credentials

@@ -1,6 +1,6 @@
 @smoke
 
-  Feature: F04_Search | user can search products
+  Feature: F04_Search | logged User could search for any product
     Scenario: user search for product successfully
       Given user open browser for search
       And user navigate to website for search

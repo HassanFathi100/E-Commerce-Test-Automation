@@ -13,6 +13,7 @@ This project is submitted to Udacity, FWD scholarship, FrontEnd performance test
 | SC_03    | User could reset his/her password successfully      |
 | SC_04    | Logged User could search for any product            |
 | SC_05    | Logged User could switch between currencies US-Euro |
+| SC_06    | Logged user could select different Categories       |
 
 ---
 - Screenshot of the environment variables
