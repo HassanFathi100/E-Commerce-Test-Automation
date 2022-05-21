@@ -3,19 +3,22 @@ package stepDefinitions;
 import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import pages.CategoryPage;
 import pages.HomePage;
 import utility.LoginSteps;
 
-public class filterColor {
+public class D06_HoverCategories {
+
     WebDriver driver = null;
     String subCategoryName;
 
-    @Given("user open browser to change color")
+    @Given("user open browser to change category")
     public void userOpenBrowser() {
         //setting up chrome driver
         String chromeDriverPath = "src/main/resources/chromedriver.exe";
@@ -27,40 +30,44 @@ public class filterColor {
         driver.manage().window().maximize();
     }
 
-    @And("user navigate to website to change color")
+    @And("user navigate to website to change category")
     public void userNavigateToWebsite() {
         //navigate to the website
         driver.navigate().to("https://demo.nopcommerce.com/");
     }
 
-    @And("user login to change color")
+    @And("user login to change category")
     public void userLogin() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(driver, "automation2@testing.com", "P@ssw0rd");
     }
 
-    @When("user hover and select shoes")
-    public void userHoverShoes() throws InterruptedException {
+    @When("user hover category and select subcategory")
+    public void userHoverCategory() throws InterruptedException {
 
         HomePage homePage = new HomePage(driver);
 
         Actions action = new Actions(driver);
 
         // hover on "Computers"
-        action.moveToElement(homePage.apparelButton).perform();
+        action.moveToElement(homePage.computersButton).perform();
 
         Thread.sleep(1000);
 
         // getText() of subCategory before click on it
-        subCategoryName = homePage.shoesItemsButton.getText().toLowerCase().trim();        // this will change "Desktops " to "desktops"
+        subCategoryName = homePage.desktopsItemButton.getText().toLowerCase().trim();        // this will change "Desktops " to "desktops"
 
         // click on "Desktops"
-        homePage.shoesItemsButton.click();
+        homePage.desktopsItemButton.click();
     }
 
-    @And("user select gray")
-    public void selectColor(){
-        new CategoryPage(driver).grayColorButton.click();
+    @Then("page title should be as the subcategory title")
+    public void subCategoryShownSuccessfully(){
+
+        CategoryPage categoryPage = new CategoryPage(driver);
+
+        String categoryTitle = categoryPage.categoryTitle.getText().toLowerCase();
+        Assert.assertEquals(categoryTitle, subCategoryName);
     }
 
     @After

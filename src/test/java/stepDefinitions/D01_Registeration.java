@@ -12,7 +12,7 @@ import pages.HomePage;
 import pages.RegisterPage;
 import pages.RegistrationSuccessPage;
 
-public class Registeration {
+public class D01_Registeration {
 
     WebDriver driver = null;
 

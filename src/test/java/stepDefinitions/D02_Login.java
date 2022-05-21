@@ -12,7 +12,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.UserHomePage;
 
-public class Login {
+public class D02_Login {
 
     WebDriver driver = null;
 

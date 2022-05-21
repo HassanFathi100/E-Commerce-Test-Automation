@@ -18,4 +18,7 @@ public class CategoryPage {
 
     @FindBy(id = "attribute-option-14")
     public WebElement grayColorButton;
+
+    @FindBy(css = "h2[class=\"product-title\"] > a[href=\"/adidas-consortium-campus-80s-running-shoes\"]")
+    public WebElement adidasShoes;
 }

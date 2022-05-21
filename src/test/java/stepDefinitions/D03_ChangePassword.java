@@ -13,7 +13,7 @@ import pages.HomePage;
 import pages.MyAccountPage;
 import utility.LoginSteps;
 
-public class ChangePassword {
+public class D03_ChangePassword {
 
     WebDriver driver = null;
 

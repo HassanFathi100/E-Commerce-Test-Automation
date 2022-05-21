@@ -14,6 +14,8 @@ import org.junit.runner.RunWith;
                     "src\\main\\resources\\features\\04_Search.feature",
                     "src\\main\\resources\\features\\05_ChangeCurrency.feature",
                     "src\\main\\resources\\features\\06_HoverCategories.feature",
+                    "src\\main\\resources\\features\\07_FilterColor.feature",
+                    "src\\main\\resources\\features\\09_AddToCart.feature",
                     },
         glue = "stepDefinitions",
         tags = "@smoke"
