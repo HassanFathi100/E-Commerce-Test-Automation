@@ -1,7 +1,6 @@
-package testScenarios;
+package stepDefinitions;
 
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -56,7 +55,7 @@ public class Registeration {
         registerPage.birthDay.click();
         registerPage.birthMonth.click();
         registerPage.birthYear.click();
-        registerPage.emailTF.sendKeys("automation@testing.com");
+        registerPage.emailTF.sendKeys("automation2@testing.com");
         registerPage.companyTf.sendKeys("automation company");
         registerPage.passwordTF.sendKeys("P@ssw0rd");
         registerPage.confirmPasswordTF.sendKeys("P@ssw0rd");
@@ -93,4 +92,13 @@ public class Registeration {
 //        Thread.sleep(2000);
 //        driver.close();
 //    }
+
+    @After
+    public void closeBrowser(){
+        try{
+            driver.quit();
+        } catch(NullPointerException e){
+            System.out.println("NullPointerException thrown!");
+        }
+    }
 }

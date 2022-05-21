@@ -1,13 +1,14 @@
-@regression
+@smoke
 
-  Feature: user can login successfully
+  Feature: F02_Login | user can login successfully
+
 
     Scenario: user enter valid credentials
       Given user open browser for login
       And user navigates to website for login
       And user click on Login button
 
-      When user enter "automation@testing.com" and "P@ssw0rd"
+      When user enter "automation2@testing.com" and "P@ssw0rd"
       And user press Login button
 
       Then user should be navigated to home page

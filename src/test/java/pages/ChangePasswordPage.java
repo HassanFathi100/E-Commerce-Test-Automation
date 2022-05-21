@@ -24,6 +24,6 @@ public class ChangePasswordPage {
     @FindBy(css = "div[class=\"buttons\"] > button[type=\"submit\"]")
     public WebElement changePasswordButton;
 
-    @FindBy(className = "p[class=\"content\"]")
+    @FindBy(css = "p[class=\"content\"]")
     public WebElement confirmationMessage;
 }

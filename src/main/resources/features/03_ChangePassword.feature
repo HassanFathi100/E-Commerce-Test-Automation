@@ -1,6 +1,6 @@
-@regression
+@smoke
 
-Feature: user can reset password
+Feature: F03_ResetPassword | user can reset password
   Scenario: user can change password successfully
     Given user open browser to reset password
     And user navigates to website to reset password

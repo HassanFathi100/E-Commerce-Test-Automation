@@ -8,7 +8,7 @@ import pages.LoginPage;
 public class LoginSteps {
 
     WebDriver driver = null;
-    public void login(WebDriver driver, String username, String password){
+    public void login(WebDriver driver, String email, String password){
         this.driver = driver;
 
         HomePage homePage = new HomePage(driver);
@@ -16,7 +16,7 @@ public class LoginSteps {
 
         homePage.loginButton.click();
 
-        loginPage.emailTF.sendKeys(username);
+        loginPage.emailTF.sendKeys(email);
         loginPage.passwordTF.sendKeys(password);
         loginPage.loginButton.click();
 

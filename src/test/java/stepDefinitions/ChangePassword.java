@@ -1,5 +1,6 @@
-package testScenarios;
+package stepDefinitions;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -37,7 +38,7 @@ public class ChangePassword {
     @And("user login to reset password")
     public void userLogin(){
         LoginSteps loginSteps = new LoginSteps();
-        loginSteps.login(driver, "automation@testing.com", "P@ssw0rd");
+        loginSteps.login(driver, "automation2@testing.com", "P@ssw0rd");
     }
 
     @When("user press my account tab")
@@ -66,12 +67,22 @@ public class ChangePassword {
     }
 
     @Then("user should see confirmation message")
-    public void confirmationMessage(){
+    public void confirmationMessage() throws InterruptedException {
         SoftAssert softAssert = new SoftAssert();
 
+        Thread.sleep(1000);
         ChangePasswordPage changePasswordPage = new ChangePasswordPage(driver);
         String actualMessage = changePasswordPage.confirmationMessage.getText();
         String expectedMessage = "Password was changed";
         softAssert.assertTrue(actualMessage.contains(expectedMessage));
+    }
+
+    @After
+    public void closeBrowser(){
+        try{
+            driver.quit();
+        } catch(NullPointerException e){
+            System.out.println("NullPointerException thrown!");
+        }
     }
 }

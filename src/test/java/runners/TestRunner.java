@@ -11,9 +11,11 @@ import org.junit.runner.RunWith;
         features = {"src\\main\\resources\\features\\01_Register.feature",
                     "src\\main\\resources\\features\\02_Login.feature",
                     "src\\main\\resources\\features\\03_ChangePassword.feature",
+                    "src\\main\\resources\\features\\04_Search.feature",
+                    "src\\main\\resources\\features\\05_ChangeCurrency.feature",
                     },
-        glue = "testScenarios",
-        tags = "@regression"
+        glue = "stepDefinitions",
+        tags = "@smoke"
 )
 
 public class TestRunner {

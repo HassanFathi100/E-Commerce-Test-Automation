@@ -24,4 +24,13 @@ public class HomePage {
     @FindBy(className = "ico-account")
     public
     WebElement myAccountButton;
+
+    @FindBy(css = "option[value=\"https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F\"]")
+    public WebElement currency_Euro;
+
+    @FindBy(id = "small-searchterms")
+    public WebElement searchTF;
+
+    @FindBy(css = "button[class=\"button-1 search-box-button\"]")
+    public WebElement searchButton;
 }

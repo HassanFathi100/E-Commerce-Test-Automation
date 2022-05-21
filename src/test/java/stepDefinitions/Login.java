@@ -1,7 +1,6 @@
-package testScenarios;
+package stepDefinitions;
 
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -88,10 +87,13 @@ public class Login {
 //        Thread.sleep(2000);
 //        driver.quit();
 //    }
-//    @After
-//    public void closeBrowser() throws InterruptedException {
-//        Thread.sleep(2000);
-//        driver.close();
-//    }
+@After
+public void closeBrowser(){
+    try{
+        driver.quit();
+    } catch(NullPointerException e){
+        System.out.println("NullPointerException thrown!");
+    }
+}
 }
 
