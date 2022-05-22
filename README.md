@@ -16,6 +16,9 @@ This project is submitted to Udacity, FWD scholarship, FrontEnd performance test
 | SC_06    | Logged user could select different Categories             |
 | SC_07    | Logged user could filter with color                       |
 | SC_09    | Logged user could add different products to Shopping cart |
+| SC_10    | Logged user could add different products to wishlist      |
+| SC_11    | Logged user could add different products to compare list  |
+
 
 ---
 - Screenshot of the environment variables

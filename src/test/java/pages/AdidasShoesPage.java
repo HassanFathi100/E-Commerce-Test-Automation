@@ -16,6 +16,12 @@ public class AdidasShoesPage {
     @FindBy(id = "add-to-cart-button-25")
     public WebElement addToCartButton;
 
+    @FindBy(id = "add-to-wishlist-button-25")
+    public WebElement addToWishlistButton;
+
+    @FindBy(css = "div[class=\"compare-products\"] > button[class=\"button-2 add-to-compare-list-button\"]")
+    public WebElement addToCompareListButton;
+
     @FindBy(css = "option[data-attr-value=\"21\"]")
     public WebElement sizeItem;
 

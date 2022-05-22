@@ -8,12 +8,6 @@ M
 R
 "src/test/java/pages/LoginPage.java,2\f\2febc867dad266b12f3cf09596e572e0dcf37dbf
 V
-&src/test/java/testScenarios/Login.java,5\a\5a4f7714003eb72a01ee9a0a4492fa6e7d49b6bb
-_
-/src/test/java/testScenarios/ChangePassword.java,4\d\4de1e2f5f72a93c3ccc62ce2e2662d0863b174b4
-^
-.src/test/java/testScenarios/Registeration.java,0\2\022e2aaf934ada4f8a0a2c1eaa0163b6d1565940
-V
 &src/test/java/pages/MyAccountPage.java,4\c\4cc1a60fdb72fd4f44d6dbf930e553e1af379c88
 `
 0src/test/java/pages/RegistrationSuccessPage.java,1\3\133ab0843d7e7a19df333b9ee50909bb2f2d9b46
@@ -45,13 +39,5 @@ Q
 ,src/test/java/utility/NavigateToProduct.java,9\4\941d3dd273bba0712dc7278ec13bc0d12ddee922
 U
 %src/test/java/pages/CategoryPage.java,b\f\bf19160d2d585f42c092731914f778eee2f12f56
-`
-0src/test/java/stepDefinitions/D09_AddToCart.java,d\6\d695a032e47f5c86f8cda3d4963eb584aace801f
 b
 2src/test/java/stepDefinitions/D07_FilterColor.java,f\9\f9699c35caec7063846299ad54c0f208c67bf358
-X
-(src/test/java/pages/AdidasShoesPage.java,2\4\24b15ea29de5a606a333da7ec8655e2d3c1910b4
-U
-%src/test/java/runners/TestRunner.java,6\8\683416d30a7936e18b925a37c73fb207dbb02b81
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

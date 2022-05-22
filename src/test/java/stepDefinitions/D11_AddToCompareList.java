@@ -13,11 +13,11 @@ import pages.CategoryPage;
 import utility.LoginSteps;
 import utility.NavigateToProduct;
 
-public class D09_AddToCart {
+public class D11_AddToCompareList {
 
     WebDriver driver = null;
 
-    @Given("user open browser to add to cart")
+    @Given("user open browser to add to compare list")
     public void userOpenBrowser() {
         //setting up chrome driver
         String chromeDriverPath = "src/main/resources/chromedriver.exe";
@@ -29,43 +29,44 @@ public class D09_AddToCart {
         driver.manage().window().maximize();
     }
 
-    @And("user navigate to website to add to cart")
+    @And("user navigate to website to add to compare list")
     public void userNavigateToWebsite() {
         //navigate to the website
         driver.navigate().to("https://demo.nopcommerce.com/");
     }
 
-    @And("user login to add to cart")
+    @And("user login to add to compare list")
     public void userLogin() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(driver, "automation2@testing.com", "P@ssw0rd");
     }
 
-    @When("user navigate to product to add to cart")
+    @When("user navigate to product to add to compare list")
     public void userNavigateToAdidasShoes() throws InterruptedException {
         NavigateToProduct navigateToProduct = new NavigateToProduct();
         navigateToProduct.navigateToAdidasShoes(driver);
     }
 
-    @And("user click on Adidas shoes to add to cart")
+    @And("user click on Adidas shoes to add to compare list")
     public void userClickOnAdidasShoes() {
         new CategoryPage(driver).adidasShoes.click();
     }
 
-    @And("user choose size to add to cart")
+    @And("user choose size to add to compare list")
     public void userChooseSize() {
         new AdidasShoesPage(driver).sizeItem.click();
     }
 
-    @And("user click on add to cart")
+    @And("user click on add to compare list")
     public void userClickOnAddToCart(){
-        new AdidasShoesPage(driver).addToCartButton.click();
+        new AdidasShoesPage(driver).addToCompareListButton.click();
     }
 
-    @Then("user should see added to cart successfully")
+    @Then("user should see added to compare list successfully" +
+            "")
     public void alertShownSuccessfully() throws InterruptedException {
         Thread.sleep(1000);
-        Assert.assertTrue(new AdidasShoesPage(driver).addToCartSuccessfullyAlert.isDisplayed());
+        Assert.assertTrue(new AdidasShoesPage(driver).addToCompareListSuccessfullyAlert.isDisplayed());
     }
 
     @After
