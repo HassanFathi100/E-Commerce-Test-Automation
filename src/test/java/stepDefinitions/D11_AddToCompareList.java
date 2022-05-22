@@ -62,8 +62,7 @@ public class D11_AddToCompareList {
         new AdidasShoesPage(driver).addToCompareListButton.click();
     }
 
-    @Then("user should see added to compare list successfully" +
-            "")
+    @Then("user should see added to compare list successfully")
     public void alertShownSuccessfully() throws InterruptedException {
         Thread.sleep(1000);
         Assert.assertTrue(new AdidasShoesPage(driver).addToCompareListSuccessfullyAlert.isDisplayed());

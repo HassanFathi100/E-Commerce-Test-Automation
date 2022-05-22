@@ -21,4 +21,7 @@ public class CategoryPage {
 
     @FindBy(css = "h2[class=\"product-title\"] > a[href=\"/adidas-consortium-campus-80s-running-shoes\"]")
     public WebElement adidasShoes;
+
+    @FindBy(css = "a[href=\"/apparel-2\"]")
+    public WebElement tag;
 }

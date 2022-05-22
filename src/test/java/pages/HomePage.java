@@ -45,6 +45,4 @@ public class HomePage {
 
     @FindBy(css = "ul[class=\"top-menu notmobile\"] a[href=\"/shoes\"]")
     public WebElement shoesItemsButton;
-
-
 }

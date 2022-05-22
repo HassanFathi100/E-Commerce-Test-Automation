@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F06_hoverCategories | user could hover categories and select sub category
 
   Scenario: user could hover categories

@@ -35,7 +35,7 @@ public class D10_AddToWishList {
         driver.navigate().to("https://demo.nopcommerce.com/");
     }
 
-    @And("user login to add to cart")
+    @And("user login to add to wishlist")
     public void userLogin() {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(driver, "automation2@testing.com", "P@ssw0rd");
