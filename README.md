@@ -43,7 +43,7 @@ This project is submitted to Udacity, FWD scholarship, FrontEnd performance test
   ---
 
 - Screenshot of the selected Maven stable version from the Maven website
-  ![Maven Version](Screenshots/maven version.png)
+  ![Maven Version](Screenshots/maven%20version.png)
   ![Selenium version](Screenshots/selenium%20version.png)
 
   ---
