@@ -34,5 +34,7 @@ public class AdidasShoesPage {
     @FindBy(css = "p[class=\"content\"] > a[href=\"/compareproducts\"]")
     public WebElement addToCompareListSuccessfullyAlert;
 
+    @FindBy(css = "span[class=\"cart-label\"]")
+    public WebElement shoppingCartButton;
 
 }

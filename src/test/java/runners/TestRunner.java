@@ -19,6 +19,7 @@ import org.junit.runner.RunWith;
                     "src\\main\\resources\\features\\09_AddToCart.feature",
                     "src\\main\\resources\\features\\10_AddToWishList.feature",
                     "src\\main\\resources\\features\\11_AddToCompareList.feature",
+                    "src\\main\\resources\\features\\12_CreateOrder.feature",
                     },
         glue = "stepDefinitions",
         tags = "@smoke"

@@ -12,12 +12,10 @@ public class NavigateToProduct {
         HomePage homePage = new HomePage(driver);
         Actions action = new Actions(driver);
 
-        // hover on "Computers"
         action.moveToElement(homePage.apparelButton).perform();
 
         Thread.sleep(1000);
 
-        // click on "Desktops"
         homePage.shoesItemsButton.click();
 
     }
