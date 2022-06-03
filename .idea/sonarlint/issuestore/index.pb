@@ -1,8 +1,6 @@
 
 M
 test-output/testng-failed.xml,0\4\048fa78c1f3865f6ecbb70ea771ac93607d18885
->
-Regression.xml,e\9\e96e681162cc814fdd5f581953f0ee6810029718
 R
 "src/test/java/pages/LoginPage.java,2\f\2febc867dad266b12f3cf09596e572e0dcf37dbf
 V
