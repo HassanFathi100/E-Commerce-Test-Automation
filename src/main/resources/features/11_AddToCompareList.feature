@@ -1,5 +1,5 @@
 @smoke
-Feature: F11_AddToCart | Logged user could add different products to compare list
+Feature: F11_AddToCompareList | Logged user could add different products to compare list
 
   Scenario: user can add items to compare list
     Given user open browser to add to compare list
